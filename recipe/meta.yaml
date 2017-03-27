@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: python-markdown-math
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: python-markdown-math-0.2.tar.gz
-  url: https://github.com/mitya57/python-markdown-math/archive/0.2.tar.gz
-  sha256: e36a78ff5752406752b6b2523cd7c7ba77a1400b3148a6c4bda96bf89ac565d5
+  url: https://pypi.io/packages/source/p/python-markdown-math/python-markdown-math-{{ version }}.tar.gz
+  sha256: c1b9cb018eb54e14609d1d1cc2ae49f6869b75a459d8a0ce759e6e6ee775d394
 
 build:
   number: 0
@@ -27,8 +27,7 @@ test:
 about:
   home: https://github.com/mitya57/python-markdown-math
   license: BSD 3-Clause
-  license_file: LICENSE
-  summary: 'Math extension for Python-Markdown'
+  summary: 'Math extension for Python-Markdown.'
 
 extra:
   recipe-maintainers:
