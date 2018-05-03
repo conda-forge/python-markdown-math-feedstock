@@ -1,4 +1,4 @@
-{% set version = "0.3" %}
+{% set version = "0.5" %}
 
 package:
   name: python-markdown-math
@@ -7,7 +7,7 @@ package:
 source:
   fn: python-markdown-math-0.2.tar.gz
   url: https://pypi.io/packages/source/p/python-markdown-math/python-markdown-math-{{ version }}.tar.gz
-  sha256: c1b9cb018eb54e14609d1d1cc2ae49f6869b75a459d8a0ce759e6e6ee775d394
+  sha256: 8f8803c92ac0847d18bd82a51fdb6acec90b2b54a4990650e627a0d4d3a78445
 
 build:
   number: 0
