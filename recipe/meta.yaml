@@ -1,35 +1,41 @@
+{% set name = "python-markdown-math" %}
 {% set version = "0.7" %}
 
+
 package:
-  name: python-markdown-math
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/python-markdown-math/python-markdown-math-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 17a12175e8b2052a1c3402fca410841c551c678046293b1f7c280ccfe7b302a0
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
     - pip
+    - python >=3.4
   run:
-    - python
-    - markdown
+    - markdown >=3.0
+    - python >=3.4
 
 test:
   imports:
     - mdx_math
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/mitya57/python-markdown-math
-  license: BSD 3-Clause
+  summary: Math extension for Python-Markdown
+  license: BSD-3-Clause
   license_file: LICENSE
-  summary: Math extension for Python-Markdown.
 
 extra:
   recipe-maintainers:
