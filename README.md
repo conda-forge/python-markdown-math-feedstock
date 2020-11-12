@@ -3,13 +3,11 @@ About python-markdown-math
 
 Home: https://github.com/mitya57/python-markdown-math
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-markdown-math-feedstock/blob/master/LICENSE.txt)
 
-Summary: Math extension for Python-Markdown.
-
-
+Summary: Math extension for Python-Markdown
 
 Current build status
 ====================
